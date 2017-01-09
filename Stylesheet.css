@@ -1,0 +1,188 @@
+/*
+*Auther: Mikael Falck
+*Titel of auther: University student
+*
+*Simple stylesheet for a blogg.
+*/
+
+/*
+this is where the default page is styled
+*/
+
+body{ 
+	display: block;
+	width: 100%;
+	margin: auto;
+	background: url(images/BG.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+
+/*
+Banner styling
+*/
+#bannerPic{
+	vertical-align: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px 2px #000000;
+	padding: 0px 0px 0px 0px;
+}
+/*image in the banner size.*/
+img{
+	width: 100%;
+}
+
+/*
+This is where the posts are styled
+*/
+div.post{
+	margin-top: 2em;
+	max-width: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 5px 5px 2px #000000;
+	border-radius: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	float: left;
+}
+
+/*Style the post titel.*/
+h1.postTitel{
+	font-style: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	margin-top: 0%;
+}
+/*Style the body of the a post.*/
+div.postBody{
+	width: 100%;
+	max-width: 100%;
+	font-family: "Times New Roman", Times, serif;
+	word-break: break-all;
+	font-size: 12px;
+	margin-bottom: 0%;
+}
+/*How the random headers in post is styled*/
+h1.postRandomHeader{
+	margin-top: 1%;
+	margin-bottom: 0%;
+	font-style: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+/*
+This is the menu styling.
+*/
+
+/*The div in the menys.*/
+#menu{
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+	margin-top: 2em;
+	box-shadow: 5px 5px 2px #000000;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	float: right;
+}
+
+/*menu text styling.*/
+h3.menuLink{
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 16px;
+}
+
+/*The buttons in the menu*/
+.menyButton{
+	background:none!important;
+	border:none;
+	padding:0!important;
+	/*border is optional*/ 
+	cursor: pointer;
+}
+
+/*
+Window color shadow 
+*/
+#window{
+	margin-top: 2em;
+	max-width: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 5px 5px 2px #000000;
+	border-radius: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 25%;
+	padding-right: 25%;
+	float: left;
+}
+/**/
+#window.content{
+	margin-right: auto;
+	margin-right: auto;
+}
+
+/*
+This where the newPost css go:
+*/
+
+/*Admin add post "window" style is set here.*/
+#newPost{
+	margin-top: 2em;
+	max-width: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 5px 5px 2px #000000;
+	border-radius: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	float: left;
+}
+
+/*Style the text in the edit bar on new post.*/
+#newPostEditBar{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	margin-top: 0%;
+}
+
+/*Setting the size of the titel input squre.*/
+#newPostTitelInput{
+	width: 20%;
+	max-width: 20%;
+}
+
+/*Deside the styling on body text headers.*/
+#textRandomHeader{
+	margin-top: 0%;
+	margin-bottom: 0%;
+	font-style: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+/*the italic button style.*/
+#textItalic{
+	font-style: italic;
+}
+
+/*Set size and boarders on the text input field for new post.*/
+#newPostInputText{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100px;
+	width: 100%;
+}
+
+/*Set possition of post button.*/
+#newPostPost{
+	top: 100%;
+}

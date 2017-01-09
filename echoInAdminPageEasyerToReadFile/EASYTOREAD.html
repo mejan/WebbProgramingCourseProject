@@ -1,0 +1,70 @@
+<!--
+Explain FIRST!
+Here is the first echo in adminPage.php
+-->
+<div class='row'>
+	<div class='col-xs-0 col-sm-0 col-md-2 col-lg-3'></div>
+		<div>
+			<img src='images/banner.png' id='bannerPic'  class='col-xs-12 col-sm-12 col-md-7 col-lg-7' alt='BannerPictu'>
+		</div>
+	</div>
+<div class='row'>
+	<div class='col-md-3 col-lg-3'></div>
+	<div class='col-xs-9 col-sm-9 col-md-5 col-lg-5'>
+		<!--
+		Explain SECOND!
+		Here is where we echo out the admin GUI post tool!
+		-->
+		<div id='newPost'>
+			<form action='adminPage.php' method='post' enctype='multipart/form-data'>
+				<div class='row-fluid'>
+					<div class='postText col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+						<h1 id='newPostEditBar'>
+							Titel:
+							<input id='newPostTitelInput' name='newPostTitelInput'>
+							<button id='textRandomHeader' name='textRandomHeader' type='button'>header</button>
+							<button id='textBig' name='textBig' type='button'>B</button>
+							<button id='textItalic' name='textItalic' type='button'>I</button>
+						</h1>
+						<textarea id='newPostInputText' name='newPostInputText'></textarea>
+					</div>
+					<div class='col-xs-4 col-sm-4 col-md-4 col-lg-4'>
+						<input type='file' name='fileToUpload' id='fileToUpload'>
+						<button type='submit' name='newPostPost' id='newPostPost'>Post</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	<!--
+	EXPLAIN getPOST!
+	Here is where we call on the function to get data from database!
+	-->
+<form action='adminPage.php' method='post'>
+
+</form>
+
+	<!--
+	EXPLAIN MENU!
+	This we echo in the adminPgae.php to get the menu!
+	-->
+	</div>
+	<div class='col-xs-3 col-sm-3 col-md-2 col-lg-2'>
+		<div id='menu'>
+			<form action='adminPage.php' method='post'>
+			<h3 class='menuLink'>
+				<button name='clientMonthCHoice' class='menyButton' value='0'>This month</button>
+			</h3>
+			<h3 class='menuLink'>
+				<button name='clientMonthCHoice' class='menyButton' value='1'>Last month</button>
+			</h3>
+			<h3 class='menuLink'>
+				<button name='clientMonthCHoice' class='menyButton' value='2'>Two Month before</button>
+			</h3>
+			<h3 class='menuLink'>
+				<a href='logout.php'>Log out</a>
+			</h3>
+			</form>
+		</div>
+	</div>
+</div>
